@@ -1,8 +1,8 @@
 import streamlit as st
 
-def marca()
-def modelo()
-def kilometraje()
+def marca():
+def modelo():
+def kilometraje():
     if kilometraje < 0:
          st.write("Por favor, ingrese un radio mayor a cero.")
 
