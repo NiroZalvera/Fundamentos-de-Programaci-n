@@ -11,7 +11,7 @@ def verificar_contrasena():
 
     while contrasena_ingresada != contrasena_correcta:
         contrasena_ingresada = st.text_input("Ingrese la contraseña", type="password")
-        if contrasena_ingresada == contrasena_correcta
+        if contrasena_ingresada == contrasena_correcta:
             st.success("Bienvenido")
             break
         elif contrasena_ingresada
