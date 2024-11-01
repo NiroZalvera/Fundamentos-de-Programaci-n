@@ -37,7 +37,7 @@ def main():
         resultado = division(numero1, numero2)
 
     #Mostrar el resultado
-    st.write(f"Resultado: "{resultado})
+    st.write(f"Resultado: {resultado}")
 
 if __name__ == "__main__":
     main()
