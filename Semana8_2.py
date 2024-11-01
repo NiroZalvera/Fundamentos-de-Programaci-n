@@ -35,8 +35,7 @@ def main():
         operacion = multiplicacion(numero1,numero2)
     elif operacion == "División":
         resultado = division(numero1,numero2)
-
-    #Mostrar el resultado
+    #monstrar el resultado
     st.write(f"Resultado: {resultado}")
 
 if __name__ == "__main__":
