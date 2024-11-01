@@ -28,13 +28,13 @@ def main():
 
     #Realizar la operación seleccionada
     if operacion == "Suma":
-        resultado = suma(numero1, numero2)
+        resultado = suma(numero1,numero2)
     elif operacion == "Resta":
-        resultado = resta(numero1, numero2)
+        resultado = resta(numero1,numero2)
     elif operacion == "Multiplicación":
-        operacion = multiplicacion(numero1, numero2)
+        operacion = multiplicacion(numero1,numero2)
     elif operacion == "División":
-        resultado = division(numero1, numero2)
+        resultado = division(numero1,numero2)
 
     #Mostrar el resultado
     st.write(f"Resultado: {resultado}")
