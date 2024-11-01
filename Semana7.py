@@ -14,7 +14,7 @@ def verificar_contrasena():
         if contrasena_ingresada == contrasena_correcta:
             st.success("Bienvenido")
             break
-        elif contrasena_ingresada
+        elif contrasena_ingresada:
             st.error("Contraseña incorrecta, intente de nuevo")
 
 if __name__ == "__main__":
