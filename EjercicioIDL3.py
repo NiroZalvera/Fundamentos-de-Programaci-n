@@ -21,9 +21,9 @@ def main():
         else:
             # Si todo está correcto, mostrar el resultado
             st.success("Automóvil registrado con éxito:")
-            st.write(f"**Marca:** {marca}")
-            st.write(f"**Modelo:** {modelo}")
-            st.write(f"**Kilometraje:** {kilometraje} km")
+            st.write(f"Marca: {marca}")
+            st.write(f"Modelo: {modelo}")
+            st.write(f"Kilometraje: {kilometraje} km")
 
 # Ejecutar el programa
 if __name__ == "__main__":
