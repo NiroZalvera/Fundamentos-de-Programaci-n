@@ -7,7 +7,7 @@ def main():
     # Entrada de datos
     marca = st.text_input("Ingrese la marca del automóvil: ")
     modelo = st.text_input("Ingrese el modelo del automóvil: ")
-    kilometraje = st.number_input("Ingrese el kilometraje del automóvil: ", min_value=0, step=1)
+    kilometraje = st.number_input("Ingrese el kilometraje del automóvil: ", min_value=1, step=1)
 
     # Verificar si el botón de registro es presionado
     if st.button("Registrar Automóvil"):
