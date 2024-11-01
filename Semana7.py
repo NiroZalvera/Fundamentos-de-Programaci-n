@@ -3,19 +3,24 @@ import streamlit as st
 def verificar_contrasena():
     st.title("Verificación de contraseña")
 
-    #Variable para almacenar la contraseña
-    contraseña_correcta = "asdasd"
-    contrasena_ingresada = ""
+    # Contraseña correcta
+    contrasena_correcta = "asdasd"
 
-    #Repetir hasta que la contraseña sea correcta
+    # Inicializar variable de sesión para almacenar la entrada del usuario
+    if "contrasena_ingresada" not in st.session_state:
+        st.session_state.contrasena_ingresada = ""
 
-    while contrasena_ingresada != contrasena_correcta:
-        contrasena_ingresada = st.text_input("Ingrese la contraseña", type="password")
+    # Input de la contraseña
+    contrasena_ingresada = st.text_input("Introduce la contraseña:", type="password")
+
+    # Botón para verificar la contraseña
+    if st.button("Verificar"):
         if contrasena_ingresada == contrasena_correcta:
+            st.session_state.contrasena_ingresada = contrasena_ingresada
             st.success("Bienvenido")
-            break
-        elif contrasena_ingresada:
-            st.error("Contraseña incorrecta, intente de nuevo")
+        else:
+            st.error("Contraseña incorrecta, intenta de nuevo")
 
+# Llamada a la función principal
 if __name__ == "__main__":
     verificar_contrasena()
