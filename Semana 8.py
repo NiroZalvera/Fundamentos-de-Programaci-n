@@ -3,7 +3,7 @@ import math
 
 #Las funciones se declaran como def
 def calcular_area(radio):
-    return math.pi * (radio ** 2)
+    return math.pi * (radio ** 2) #math.pi es el valor de pi
 
 def calcular_perimetro(radio):
     return 2 * math.pi * radio
@@ -17,8 +17,10 @@ def main():
         area = calcular_area(radio) #Llamando la función
         perimetro = calcular_perimetro(radio)
 
+        #Mostrar resultados
         st.write(f"Área: {area:.2f}")
         st.write(f"Perímetro: {perimetro:.2f}")
+        
     else:
         st.write("Por favor, ingrese un radio mayor a cero.")
 
